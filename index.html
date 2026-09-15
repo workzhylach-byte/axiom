@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axiom Clinic — стоматология полного цикла в Москве</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-row">
+      <a href="index.html" class="logo">Axiom <em>Clinic</em></a>
+      <div class="header-info">
+        <div><b>г. Москва, [адрес]</b>Ежедневно, 09:00–21:00</div>
+        <div><b>+7 (000) 000-00-00</b><a href="#" class="call-link">Заказать звонок</a></div>
+      </div>
+      <div class="header-icons">
+        <span class="icon-pill">TG</span><span class="icon-pill">WA</span>
+        <a href="kontakty.html" class="btn btn-dark">Записаться</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="o-klinike.html">О клинике</a>
+      <a href="uslugi.html">Услуги</a>
+      <a href="komanda.html">Команда</a>
+      <a href="nashi-raboty.html">Наши работы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="kontakty.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<section style="padding:0;">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <span class="hero-slide-label">Фото / видео клиники — слайд 1</span>
+    </div>
+    <div class="hero-slide alt">
+      <span class="hero-slide-label">Фото / видео клиники — слайд 2</span>
+    </div>
+    <div class="hero-slide">
+      <span class="hero-slide-label">Фото / видео клиники — слайд 3</span>
+    </div>
+    <div class="hero-dots">
+      <span class="hero-dot active" onclick="heroGo(0)"></span>
+      <span class="hero-dot" onclick="heroGo(1)"></span>
+      <span class="hero-dot" onclick="heroGo(2)"></span>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.hero-dot');
+  var current = 0, timer;
+  window.heroGo = function(i){
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  };
+  function next(){ heroGo((current+1) % slides.length); }
+  timer = setInterval(next, 5000);
+})();
+</script>
+
+<section style="background:var(--cream-deep); padding:60px 0;">
+  <div class="container">
+    <div style="max-width:760px;">
+      <h2 style="font-size:26px; margin-bottom:20px;">Добро пожаловать в Axiom Clinic</h2>
+      <p style="color:var(--ink-soft); line-height:1.7; font-size:15px; margin-bottom:16px;">Axiom Clinic — инновационная стоматология нового поколения, где здоровье и красота улыбки пациентов являются безусловным приоритетом. Пространство без компромиссов: кабинеты, оснащённые премиум-установками, лечение с применением микроскопа, собственная рентген-диагностика с компьютерным томографом, 3D-сканирование, системы отбеливания и гигиены последнего поколения.</p>
+      <p style="color:var(--ink-soft); line-height:1.7; font-size:15px; margin-bottom:16px;">В основе клиники — команда высококвалифицированных специалистов, для которых качество и внимание к деталям являются ежедневной практикой. Индивидуальный подход — не просто слова, а принцип нашей работы.</p>
+      <p style="color:var(--ink-soft); line-height:1.7; font-size:15px;">Будем рады видеть вас в Axiom Clinic — доверьте свою улыбку профессионалам.</p>
+    </div>
+    <figure style="margin:32px 0 0; max-width:340px;">
+      <a href="komanda.html" class="art" style="display:block; height:300px;"></a>
+      <figcaption style="margin-top:12px;">
+        <b style="display:block; font-size:14.5px;">Махнёва Инна Сергеевна</b>
+        <p style="color:var(--ink-soft); font-size:13.5px; margin-top:4px;">Главный врач и основатель клиники,<br>кандидат медицинских наук</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <h2>Услуги клиники</h2>
+      <p class="note">Восемь направлений стоматологии — от диагностики до сложного протезирования.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+      <a href="terapiya.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Терапия</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Ортопедия</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Хирургия</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Детская стоматология</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Пародонтология</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Ортодонтия</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Имплантология</a>
+      <a href="uslugi.html" class="card-pad" style="border:1px solid var(--line-soft); text-align:center; font-weight:600; font-size:15px; padding:26px 12px;">Рентгенодиагностика</a>
+    </div>
+    <a href="uslugi.html" class="btn btn-outline" style="margin-top:26px;">Все услуги и цены</a>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <h2>Команда</h2>
+      <p class="note">Специалисты с профильным образованием и практическим опытом.</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:22px;">
+      <a href="komanda.html">
+        <div class="art" style="height:260px;"></div>
+        <b style="display:block; font-size:14.5px; margin-top:14px;">Имя Фамилия</b>
+        <span style="color:var(--ink-soft); font-size:13px;">Врач-хирург</span><br>
+        <span style="color:var(--ink-soft); font-size:13px;">Стаж [X] лет</span>
+      </a>
+      <a href="komanda.html">
+        <div class="art alt" style="height:260px;"></div>
+        <b style="display:block; font-size:14.5px; margin-top:14px;">Имя Фамилия</b>
+        <span style="color:var(--ink-soft); font-size:13px;">Врач-терапевт</span><br>
+        <span style="color:var(--ink-soft); font-size:13px;">Стаж [X] лет</span>
+      </a>
+      <a href="komanda.html">
+        <div class="art" style="height:260px;"></div>
+        <b style="display:block; font-size:14.5px; margin-top:14px;">Имя Фамилия</b>
+        <span style="color:var(--ink-soft); font-size:13px;">Врач-ортопед</span><br>
+        <span style="color:var(--ink-soft); font-size:13px;">Стаж [X] лет</span>
+      </a>
+      <a href="komanda.html">
+        <div class="art alt" style="height:260px;"></div>
+        <b style="display:block; font-size:14.5px; margin-top:14px;">Имя Фамилия</b>
+        <span style="color:var(--ink-soft); font-size:13px;">Врач-ортодонт</span><br>
+        <span style="color:var(--ink-soft); font-size:13px;">Стаж [X] лет</span>
+      </a>
+    </div>
+    <a href="komanda.html" class="btn btn-outline" style="margin-top:26px;">Вся команда</a>
+  </div>
+</section>
+
+<section style="background:var(--cream-deep); padding:60px 0;">
+  <div class="container" style="position:relative;">
+    <div class="art alt" style="height:320px; position:relative;">
+      <span style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#fff; font-size:13px; opacity:.85;">Карта проезда — г. Москва</span>
+    </div>
+    <div class="card" style="position:absolute; top:24px; left:24px; width:280px; box-shadow:0 12px 32px rgba(0,0,0,.18);">
+      <div style="padding:16px 24px; border-bottom:1px solid var(--line-soft);">
+        <span style="color:var(--ink-soft); font-size:11.5px;">Адрес</span>
+        <p style="font-weight:600; font-size:14px; margin-top:4px;">г. Москва, [адрес]</p>
+      </div>
+      <div style="padding:16px 24px; border-bottom:1px solid var(--line-soft);">
+        <span style="color:var(--ink-soft); font-size:11.5px;">Телефон</span>
+        <p style="font-weight:600; font-size:14px; margin-top:4px;">+7 (000) 000-00-00</p>
+      </div>
+      <div style="padding:16px 24px;">
+        <span style="color:var(--ink-soft); font-size:11.5px;">Режим работы</span>
+        <p style="font-weight:600; font-size:14px; margin-top:4px;">Ежедневно, 09:00–21:00</p>
+      </div>
+      <div class="card-pad" style="padding-top:0;">
+        <a href="kontakty.html" class="btn btn-dark" style="display:block; text-align:center;">Записаться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Axiom <em>Clinic</em></a>
+      <p>Стоматология полного цикла в Москве: терапия, хирургия, ортопедия, ортодонтия и детская стоматология.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="o-klinike.html">О клинике</a></li>
+        <li><a href="uslugi.html">Услуги</a></li>
+        <li><a href="komanda.html">Команда</a></li>
+        <li><a href="nashi-raboty.html">Наши работы</a></li>
+        <li><a href="novosti.html">Новости</a></li>
+        <li><a href="kontakty.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="uslugi.html">Хирургия</a></li>
+        <li><a href="terapiya.html">Терапия</a></li>
+        <li><a href="uslugi.html">Протезирование</a></li>
+        <li><a href="uslugi.html">Ортодонтия</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+        <li><a href="mailto:info@axiomclinic.ru">info@axiomclinic.ru</a></li>
+        <li><a href="kontakty.html">г. Москва, [адрес]</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <div>© 2026 Axiom Clinic. Все права защищены.</div>
+    <div>
+      <a href="rekvizity.html">Реквизиты и документы</a>
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Согласие на обработку данных</a>
+      <a href="#">Публичная оферта</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
